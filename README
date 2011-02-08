@@ -3,12 +3,19 @@ Lectures:
   Mon 13:00, CSR
   Thu 16:00, CSR <- conflict?  Note on door saying 17:00??  Move???
 
-Git Cheat Sheet:
- http://ktown.kde.org/~zrusin/git/git-cheat-sheet.svg
+Git
+ Cheat Sheet:
+  http://ktown.kde.org/~zrusin/git/git-cheat-sheet.svg
+ Parable:
+  http://tom.preston-werner.com/2009/05/19/the-git-parable.html
 
-Git Parable
- http://tom.preston-werner.com/2009/05/19/the-git-parable.html
-
-Streaming Algorithms:
- http://www.americanscientist.org/issues/pub/the-britney-spears-problem
- http://en.wikipedia.org/wiki/Streaming_algorithm
+Algorithm
+ Streaming:
+  http://www.americanscientist.org/issues/pub/the-britney-spears-problem
+  http://en.wikipedia.org/wiki/Streaming_algorithm
+  http://www.notjustrandom.com/2009/11/13/finding-frequent-items-in-a-data-stream/
+ Stochastic
+  Binary Trees:
+  Skip Lists:
+  Lecture Notes, Advanced:
+   http://www.cs.cmu.edu/~odonnell/papers/probability-and-computing-lecture-notes.pdf
