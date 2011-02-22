@@ -10,12 +10,21 @@ Git
   http://tom.preston-werner.com/2009/05/19/the-git-parable.html
 
 Algorithm
+
  Streaming:
   http://www.americanscientist.org/issues/pub/the-britney-spears-problem
   http://en.wikipedia.org/wiki/Streaming_algorithm
   http://www.notjustrandom.com/2009/11/13/finding-frequent-items-in-a-data-stream/
+  Graph streaming algorithms:
+   check for connected
+   check for bipartite
+
  Stochastic
   Binary Trees:
   Skip Lists:
   Lecture Notes, Advanced:
    http://www.cs.cmu.edu/~odonnell/papers/probability-and-computing-lecture-notes.pdf
+
+ Misc
+  Union-Find
+  O(1) get(), set(), zero() array trick
