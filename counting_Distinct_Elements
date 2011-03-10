@@ -1,0 +1,19 @@
+Counting (Approx) Number Of Distinct Elements
+
+Use -approximation
+    -hashing
+
+
+Si = int [0...n-1]
+  ex. S1, S2, S3, ...
+
+Hash Function h: [0,n-1] -> [0,n-1]
+  ex. h(S1), h(S2), h(S3), ...
+
+Need to 1. Keep track of small (striking) interval
+	2. Remember the k smallest numbers h(Si)
+	3. Look at k smallest numbers out of stream with t elements
+
+S = biggest number in k
+S = (k/t')*n  =>  t' = (k*n)/S
+
