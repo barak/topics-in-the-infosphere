@@ -4,16 +4,41 @@ Use -approximation
     -hashing
 
 
-Si = int [0...n-1]
-  ex. S1, S2, S3, ...
+X = sequence to examine.
+  elements are integers in range [0...n-1]
+  individual elements x_1, x_2, x_3, ..., x_t
+  (we use t for the number of elements observed.)
 
 Hash Function h: [0,n-1] -> [0,n-1]
-  ex. h(S1), h(S2), h(S3), ...
 
-Need to 1. Keep track of small (striking) interval
-	2. Remember the k smallest numbers h(Si)
-	3. Look at k smallest numbers out of stream with t elements
+  assumed to be "random", so distinct outputs of h() can be treated as
+  uniformly distributed random values.
 
-S = biggest number in k
-S = (k/t')*n  =>  t' = (k*n)/S
+  ex. h(x_1), h(x_2), h(x_3), ..., h(x_t) is the seq processed by h().
 
+Ideas:
+
+ - keep track of number of distinct h(x_i)'s in some interval, scale
+   this up to estimate the number in the whole range.
+
+ - need to make this interval shrink as more data comes, so storage
+   does not grow.
+
+ - do this by remembering the k smallest distinct numbers h(S_i) seen,
+   where k is chosen to trade off storage against accuracy.  (Bigger
+   takes more storage but should give a more accurate estimate.)
+
+ - some algebra: let s be the biggest of the k smallest distinct
+   numbers seen so far; let t be the number of elements in the
+   sequence seen so far; let t' be the number of distinct elements
+   seen so far.
+
+   we would expect, approximately:
+
+     s = k * (n / t')
+
+   since the average separation between distinct elements will be n/t'
+   and there are k such gaps to get to s.  Solve this equation for t'
+   to get our estimate:
+
+     t' = k * n / s
