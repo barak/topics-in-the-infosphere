@@ -24,7 +24,7 @@ Ideas:
  - need to make this interval shrink as more data comes, so storage
    does not grow.
 
- - do this by remembering the k smallest distinct numbers h(S_i) seen,
+ - do this by remembering the k smallest distinct numbers h(x_i) seen,
    where k is chosen to trade off storage against accuracy.  (Bigger
    takes more storage but should give a more accurate estimate.)
 
