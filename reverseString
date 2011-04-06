@@ -1,0 +1,23 @@
+
+How to reverse a string
+
+Eg. s = quick brown fox 
+    r = fox brown quick
+
+O(n) * O(n)
+= O(n^2)
+
+
+s = "quick brown fox";
+r="";
+i=0;
+while(i<s.length()){ //O(n)
+	substring = "";
+	while(s.charAt(i)!=' '){ //O(n)
+		substring = substring + s.charAt(i);
+		i++; //move onto the next character
+	}
+	r = substring + r;
+	i++; //skip past the space
+}
+System.out.println(s + " -> " + r);
